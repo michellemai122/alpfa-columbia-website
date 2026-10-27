@@ -28,7 +28,7 @@ export const executiveBoard: TeamMember[] = [
   },
   { name: 'Justin Martinez-Posadas', role: 'External Engagement Chair' },
   { name: 'Santiago Castano-Medina', role: 'Community Liaison Chair' },
-  { name: 'Leilani Hernandez', role: 'Freshman Representative' },
+  { name: 'Leilani June Hernandez', role: 'Freshman Representative' },
   { name: 'Rodrigo Jaime', role: 'Freshman Representative' },
 ]
 
@@ -45,5 +45,7 @@ export const ocm: TeamMember[] = [
   { name: 'Janira Martinez', role: 'Finance Professional Development' },
   { name: 'Keysy Lopez Diaz', role: 'Marketing' },
   { name: 'Sofia Taboda', role: 'Marketing' },
+  { name: 'Emily Ramirez Garcia', role: 'Marketing' },
+  { name: 'Ashley Castillo Mendez', role: 'External Engagement' },
   { name: 'Laleigh Piñeiro', role: 'OCM Member' },
 ]
