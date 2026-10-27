@@ -28,3 +28,15 @@ npm run lint
 - **Events:** edit `src/data/events.ts` (past events, calendar entries, next upcoming event).
 - **Links** (Linktree, newsletter, socials, sponsorship package): edit `src/data/site.ts`.
 - **Photos:** drop files into `public/images/` with the names listed there. Missing photos show a navy placeholder.
+
+## Deploying
+
+The live site is at https://michellemai122.github.io/alpfa-columbia-website/ (GitHub Pages, served from the `gh-pages` branch).
+
+To publish your current code, run:
+
+```bash
+npm run deploy
+```
+
+This builds the site and pushes `dist/` to `gh-pages`; the site updates about a minute later.

@@ -5,6 +5,7 @@ import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
 import { faq } from '../data/faq'
 import { links, memberOfTheMonth, networkLogos, nextEvent, stats } from '../data/site'
+import { asset } from '../lib/asset'
 
 const heroPhotos = [
   { src: '/images/hero-1.jpg', alt: 'ALPFA Columbia members on the Low Library steps' },
@@ -94,7 +95,7 @@ export function Home() {
           {networkLogos.map((logo) => (
             <div key={logo.name} className="network__logo">
               <img
-                src={logo.src}
+                src={asset(logo.src)}
                 alt={logo.name}
                 onError={(e) => {
                   e.currentTarget.replaceWith(Object.assign(document.createElement('span'), { textContent: logo.name }))

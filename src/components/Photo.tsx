@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from 'react'
+import { asset } from '../lib/asset'
 
 type PhotoProps = {
   src?: string
@@ -22,5 +23,5 @@ export function Photo({ src, alt, className = '', grayscale = false, placeholder
     )
   }
 
-  return <img className={classes} src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} />
+  return <img className={classes} src={asset(src)} alt={alt} loading="lazy" onError={() => setFailed(true)} />
 }
