@@ -2,8 +2,8 @@
 export const links = {
   linktree: '#',
   newsletter: '#',
-  instagram: '#',
-  linkedin: '#',
+  instagram: 'https://www.instagram.com/alpfacolumbia/',
+  linkedin: 'https://www.linkedin.com/in/alpfacolumbiauniversity/',
   tiktok: '#',
   whatsapp: '#',
   email: 'mailto:communicationsalpfacolumbia@gmail.com',
