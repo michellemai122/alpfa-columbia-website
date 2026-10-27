@@ -1305,6 +1305,8 @@ p {
 
 .winners__grid .photo {
   height: 260px;
+  /* Trim from the bottom, not the top, so there's room above everyone's heads. */
+  object-position: 50% 0%;
 }
 
 .winners__grid figcaption {
