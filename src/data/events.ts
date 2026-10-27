@@ -13,7 +13,6 @@ export const eventCategories: EventCategory[] = ['Professional', 'Leadership', '
 export const pastEvents: ChapterEvent[] = [
   { title: 'Resume Workshop', date: '2026-09-02', category: 'Professional', photo: '/images/events/resume-workshop.jpg' },
   { title: 'Amazon × ALPFA', date: '2026-10-15', category: 'Professional', photo: '/images/events/amazon.jpg' },
-  { title: "Moody's Office Visit", date: '2026-09-26', category: 'Professional', photo: '/images/events/moodys.jpg' },
   { title: "Pa'lante: Latinx Leadership Summit", date: '2026-09-13', category: 'Leadership', photo: '/images/events/palante.jpg' },
   { title: 'Community Picnic', date: '2026-10-14', category: 'Community', photo: '/images/events/picnic.jpg' },
   { title: 'Beyond the Prompt: AI Workshop', date: '2026-09-29', category: 'Professional', photo: '/images/events/ai-workshop.jpg' },
