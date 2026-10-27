@@ -13,14 +13,14 @@ export const eventCategories: EventCategory[] = ['Professional', 'Community']
 
 // Dates checked against the chapter's ALPFA 2026-2027 Google Calendar and photo timestamps.
 export const pastEvents: ChapterEvent[] = [
-  { title: 'Resume Workshop + Cafecito', date: '2026-09-15', category: 'Professional', photo: '/images/events/resume-workshop.jpg' },
+  { title: 'Resume Workshop + Cafecito', date: '2026-09-15', category: 'Professional', photo: '/images/events/resume-workshop.svg' },
   { title: "Pa'lante 2026: Latinx Heritage Month Festival", date: '2026-09-19', category: 'Community', photo: '/images/events/palante.jpg' },
-  { title: 'ALPFA Jeopardy', date: '2026-09-22', category: 'Community' },
+  { title: 'ALPFA Jeopardy', date: '2026-09-22', category: 'Community', photo: '/images/events/jeopardy.svg' },
   { title: 'Beyond the Prompt: AI Workshop', date: '2026-09-29', category: 'Professional', photo: '/images/events/ai-workshop.jpg' },
   { title: 'Consulting 101', date: '2026-10-06', category: 'Professional', photo: '/images/events/consulting-101.jpg' },
   { title: 'Tech 101', date: '2026-10-13', category: 'Professional', photo: '/images/events/tech-101.jpg' },
   { title: 'Amazon × ALPFA', date: '2026-10-15', category: 'Professional', photo: '/images/events/amazon.jpg' },
-  { title: 'Night Market', date: '2026-10-18', category: 'Community' },
+  { title: 'Night Market', date: '2026-10-18', category: 'Community', photo: '/images/events/night-market.svg' },
   { title: 'Finance 101', date: '2026-10-20', category: 'Professional', photo: '/images/events/finance-101.jpg' },
   { title: 'CareerSpring Workshop', date: '2026-10-22', category: 'Professional', photo: '/images/events/careerspring.jpg' },
 ]

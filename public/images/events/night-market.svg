@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1f4a"/>
+      <stop offset="1" stop-color="#2c4f94"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#f6c945" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f6c945" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+
+  <!-- stars + moon -->
+  <g fill="#f8f6f2">
+    <circle cx="90" cy="70" r="3"/><circle cx="260" cy="120" r="2.5"/><circle cx="410" cy="60" r="3"/>
+    <circle cx="640" cy="95" r="2.5"/><circle cx="780" cy="50" r="3"/><circle cx="960" cy="110" r="2.5"/>
+    <circle cx="1130" cy="70" r="3"/><circle cx="560" cy="160" r="2"/><circle cx="180" cy="200" r="2"/>
+  </g>
+  <circle cx="1040" cy="150" r="56" fill="#f8f6f2" opacity="0.9"/>
+  <circle cx="1064" cy="136" r="52" fill="#122658"/>
+
+  <!-- string of lanterns -->
+  <path d="M0 230 Q300 330 600 250 T1200 240" fill="none" stroke="#f8f6f2" stroke-width="3" opacity="0.6"/>
+  <g>
+    <g transform="translate(110 268)"><circle r="70" fill="url(#glow)"/><line y1="-22" y2="-4" stroke="#f8f6f2" stroke-width="3"/><ellipse rx="26" ry="34" cy="26" fill="#e05350"/><rect x="-14" y="-6" width="28" height="8" rx="3" fill="#f6c945"/><rect x="-14" y="56" width="28" height="8" rx="3" fill="#f6c945"/></g>
+    <g transform="translate(330 300)"><circle r="70" fill="url(#glow)"/><line y1="-22" y2="-4" stroke="#f8f6f2" stroke-width="3"/><ellipse rx="26" ry="34" cy="26" fill="#f6c945"/><rect x="-14" y="-6" width="28" height="8" rx="3" fill="#e05350"/><rect x="-14" y="56" width="28" height="8" rx="3" fill="#e05350"/></g>
+    <g transform="translate(560 262)"><circle r="70" fill="url(#glow)"/><line y1="-22" y2="-4" stroke="#f8f6f2" stroke-width="3"/><ellipse rx="26" ry="34" cy="26" fill="#e05350"/><rect x="-14" y="-6" width="28" height="8" rx="3" fill="#f6c945"/><rect x="-14" y="56" width="28" height="8" rx="3" fill="#f6c945"/></g>
+    <g transform="translate(790 232)"><circle r="70" fill="url(#glow)"/><line y1="-22" y2="-4" stroke="#f8f6f2" stroke-width="3"/><ellipse rx="26" ry="34" cy="26" fill="#f6c945"/><rect x="-14" y="-6" width="28" height="8" rx="3" fill="#e05350"/><rect x="-14" y="56" width="28" height="8" rx="3" fill="#e05350"/></g>
+    <g transform="translate(1010 244)"><circle r="70" fill="url(#glow)"/><line y1="-22" y2="-4" stroke="#f8f6f2" stroke-width="3"/><ellipse rx="26" ry="34" cy="26" fill="#e05350"/><rect x="-14" y="-6" width="28" height="8" rx="3" fill="#f6c945"/><rect x="-14" y="56" width="28" height="8" rx="3" fill="#f6c945"/></g>
+  </g>
+
+  <!-- market stalls -->
+  <g>
+    <!-- stall 1 -->
+    <rect x="80" y="520" width="300" height="200" fill="#0b1f4a"/>
+    <path d="M60 520h340l-20-80H80z" fill="#f8f6f2"/>
+    <path d="M80 440h50l-6 80H60zM180 440h50l4 80h-60zM280 440h50l20 80h-60z" fill="#e05350"/>
+    <rect x="80" y="600" width="300" height="20" fill="#f6c945"/>
+    <!-- stall 2 -->
+    <rect x="450" y="490" width="300" height="230" fill="#0b1f4a"/>
+    <path d="M430 490h340l-20-80H450z" fill="#f8f6f2"/>
+    <path d="M450 410h50l-6 80h-64zM550 410h50l4 80h-60zM650 410h50l20 80h-60z" fill="#f6c945"/>
+    <rect x="450" y="580" width="300" height="20" fill="#e05350"/>
+    <!-- stall 3 -->
+    <rect x="820" y="520" width="300" height="200" fill="#0b1f4a"/>
+    <path d="M800 520h340l-20-80H820z" fill="#f8f6f2"/>
+    <path d="M820 440h50l-6 80h-64zM920 440h50l4 80h-60zM1020 440h50l20 80h-60z" fill="#e05350"/>
+    <rect x="820" y="600" width="300" height="20" fill="#f6c945"/>
+  </g>
+  <!-- low steps -->
+  <rect y="720" width="1200" height="80" fill="#e7eef9" opacity="0.25"/>
+  <rect y="745" width="1200" height="6" fill="#e7eef9" opacity="0.3"/>
+  <rect y="772" width="1200" height="6" fill="#e7eef9" opacity="0.3"/>
+</svg>
