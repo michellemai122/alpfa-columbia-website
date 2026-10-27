@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { links, navItems } from '../data/site'
+import { links } from '../data/site'
 import { Icon, type IconName } from './Icon'
 import { Logo } from './Logo'
 
@@ -40,22 +39,6 @@ export function Footer() {
       </div>
 
       <div className="container footer__bottom">
-        <nav className="footer__nav">
-          {navItems.map((item) =>
-            item.external ? (
-              <a key={item.label} href={item.to} target="_blank" rel="noreferrer">
-                {item.label}
-              </a>
-            ) : (
-              <Link key={item.label} to={item.to}>
-                {item.label}
-              </Link>
-            ),
-          )}
-          <Link className="btn btn--light btn--sm" to="/sponsors">
-            Become a Sponsor
-          </Link>
-        </nav>
         <p className="footer__copy">© {year} ALPFA Columbia. All rights reserved.</p>
       </div>
     </footer>

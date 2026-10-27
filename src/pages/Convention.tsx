@@ -22,12 +22,15 @@ const pastConventions = [
     city: 'Las Vegas, NV',
     year: '2025',
     slug: 'las-vegas',
+    // Mostly portrait photos, so four fit across at a good height.
+    perView: 4,
     text: 'Our 2025 convention in Las Vegas brought together students and professionals for unforgettable networking, leadership development, and new opportunities.',
   },
   {
     city: 'Charlotte, NC',
     year: '2026',
     slug: 'charlotte',
+    perView: 3,
     text: 'Our 2026 convention in Charlotte was a launchpad for growth, innovation, and community, uniting students, professionals, and corporate partners from across the country.',
   },
 ]
@@ -147,7 +150,7 @@ export function Convention() {
               <Photo className="rounded" src={`/images/convention/${c.slug}-main.jpg`} alt={`${c.city} convention`} />
             </div>
             <p className="eyebrow eyebrow--yellow">{c.city.split(',')[0]} memories</p>
-            <Carousel photos={memories(c.slug, c.city)} perView={4} className="trip__carousel" />
+            <Carousel photos={memories(c.slug, c.city)} perView={c.perView} keepAspect className="trip__carousel" />
           </article>
         ))}
 
@@ -161,15 +164,9 @@ export function Convention() {
             <p className="next-stop__place">
               <Icon name="pin" size={20} /> Orlando, Florida
             </p>
-            <span className="btn btn--navy">
+            <a className="btn btn--navy" href="https://www.alpfa.org/event-convention" target="_blank" rel="noreferrer">
               Coming soon <Icon name="arrow-right" size={18} />
-            </span>
-          </div>
-          <div className="next-stop__goal">
-            <strong>25</strong>
-            <p>Target members for ALPFA Convention 2027</p>
-            <span className="rule" />
-            <small>Bigger opportunities. More connections. A stronger ALPFA Columbia.</small>
+            </a>
           </div>
           <Icon name="plane" size={48} className="next-stop__plane" />
         </aside>

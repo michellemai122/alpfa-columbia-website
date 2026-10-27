@@ -388,7 +388,7 @@ p {
 .footer {
   background: var(--navy);
   color: var(--white);
-  padding: 56px 0 28px;
+  padding: 36px 0 16px;
   margin-top: 96px;
 }
 
@@ -443,25 +443,11 @@ p {
 }
 
 .footer__bottom {
-  margin-top: 40px;
-  padding-top: 24px;
-  border-top: 1px solid rgb(255 255 255 / 0.4);
+  margin-top: 24px;
   text-align: center;
 }
 
-.footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  font-family: var(--font-head);
-  text-transform: uppercase;
-  font-size: 0.85rem;
-}
-
 .footer__copy {
-  margin-top: 16px;
   font-size: 0.8rem;
   opacity: 0.8;
 }
@@ -581,6 +567,20 @@ p {
   display: grid;
   grid-template-columns: repeat(var(--per-view, 1), 1fr);
   gap: 4px;
+  height: 100%;
+}
+
+.carousel__track--natural {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Each cell grows in proportion to its photo's shape, so every photo shows uncropped at one shared height. */
+.carousel__cell {
+  min-width: 0;
+}
+
+.carousel__cell .photo {
   height: 100%;
 }
 
@@ -1172,7 +1172,6 @@ p {
 }
 
 .trip__carousel {
-  height: 200px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1180,8 +1179,6 @@ p {
 .next-stop {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
   margin-top: 56px;
   padding: 36px 40px;
   border-radius: var(--radius);
@@ -1209,26 +1206,6 @@ p {
   color: var(--red);
 }
 
-.next-stop__goal {
-  border-left: 2px solid var(--navy);
-  padding-left: 32px;
-  color: var(--navy);
-}
-
-.next-stop__goal strong {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 4.4rem;
-  line-height: 1;
-}
-
-.next-stop__goal p {
-  font-family: var(--font-head);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-}
-
 .next-stop__plane {
   position: absolute;
   right: 40px;
@@ -1238,14 +1215,8 @@ p {
 
 @media (max-width: 860px) {
   .split,
-  .trip__head,
-  .next-stop {
+  .trip__head {
     grid-template-columns: 1fr;
-  }
-
-  .next-stop__goal {
-    border-left: 0;
-    padding-left: 0;
   }
 }
 
