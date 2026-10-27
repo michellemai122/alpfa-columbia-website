@@ -276,6 +276,7 @@ p {
 .logo__mark {
   width: 64px;
   height: 54px;
+  object-fit: contain;
 }
 
 .logo__divider {
@@ -1694,6 +1695,14 @@ p {
 
 .member > .photo {
   height: 180px;
+  object-position: 50% 25%;
+}
+
+.member__photo.photo--placeholder {
+  background: var(--ice);
+  color: var(--navy);
+  font-size: 4rem;
+  opacity: 0.9;
 }
 
 .member__info {

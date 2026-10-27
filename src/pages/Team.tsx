@@ -14,7 +14,12 @@ function slug(name: string) {
 function MemberCard({ member }: { member: TeamMember }) {
   return (
     <article className="member" tabIndex={0}>
-      <Photo src={member.photo ?? `/images/team/${slug(member.name)}.jpg`} alt={member.name} />
+      <Photo
+        className="member__photo"
+        src={member.photo ?? `/images/team/${slug(member.name)}.jpg`}
+        alt={member.name}
+        placeholder="?"
+      />
       <div className="member__info" aria-hidden="true">
         <h3>{member.name}</h3>
         <p>{member.role}</p>
