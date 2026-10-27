@@ -12,7 +12,6 @@ import {
   upcomingEvents,
   type EventCategory,
 } from '../data/events'
-import { links } from '../data/site'
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
@@ -144,14 +143,6 @@ export function Events() {
             </article>
           ))}
         </div>
-        <a className="idea" href={links.shareEventIdea} target="_blank" rel="noreferrer">
-          <span className="idea__bulb">💡</span>
-          <span>
-            <strong>Have an Event Idea?</strong>
-            <small>Share an idea</small>
-          </span>
-          <Icon name="chevron-right" size={18} />
-        </a>
       </section>
     </>
   )

@@ -1618,32 +1618,8 @@ p {
   color: var(--navy);
 }
 
-.idea {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 40;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 16px;
-  background: var(--white);
-  border-radius: 999px;
-  box-shadow: var(--shadow);
-  color: var(--navy);
-  font-family: var(--font-head);
-  font-size: 0.85rem;
-}
 
-.idea small {
-  display: block;
-  text-decoration: underline;
-  color: var(--muted);
-}
 
-.idea__bulb {
-  font-size: 1.4rem;
-}
 
 @media (max-width: 860px) {
   .events-hero,
