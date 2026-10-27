@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom'
 import { Carousel } from '../components/Carousel'
 import { Faq } from '../components/Faq'
 import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
 import { faq } from '../data/faq'
-import { upcomingEvents } from '../data/events'
 import { memberOfTheMonth, stats } from '../data/site'
-
-const nextEvent = upcomingEvents[0]
 
 const heroPhotos = [
   { src: '/images/hero-1.jpg', alt: 'ALPFA Columbia members on the Low Library steps' },
@@ -27,19 +23,6 @@ export function Home() {
             <br />
             Latino leaders<span className="dot">.</span>
           </h1>
-          <Link className="next-up" to="/events">
-            <span className="next-up__icon">
-              <Icon name="calendar" size={20} />
-            </span>
-            <span className="next-up__text">
-              <small>Next up</small>
-              <strong>{nextEvent.title}</strong>
-            </span>
-            <span className="next-up__date">
-              {new Date(`${nextEvent.date}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}
-            </span>
-            <Icon name="chevron-right" size={18} />
-          </Link>
         </div>
         <Carousel className="hero__carousel" photos={heroPhotos} />
       </section>
