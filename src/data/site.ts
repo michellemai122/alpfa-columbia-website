@@ -41,11 +41,10 @@ export const nextEvent = {
 export const memberOfTheMonth = {
   month: 'October',
   name: 'Member of the Month',
-  detail: 'Finance Major • Class of 2026',
-  quote:
-    'ALPFA helped me find a community that challenges me to grow, lead, and create opportunities for others.',
-  recognition:
-    'Recognized for her leadership, mentorship, and dedication to the ALPFAMILIA.',
+  // Placeholder until this month's member is chosen.
+  detail: 'Name • Major • Class of 20XX',
+  quote: 'Member quote goes here.',
+  recognition: 'Why they were recognized goes here.',
   photo: '/images/member-of-the-month.jpg',
 }
 

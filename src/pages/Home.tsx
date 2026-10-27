@@ -64,7 +64,12 @@ export function Home() {
           </div>
 
           <article className="motm">
-            <Photo className="motm__photo" src={memberOfTheMonth.photo} alt={`${memberOfTheMonth.month} member of the month`} />
+            <Photo
+              className="motm__photo member__photo"
+              src={memberOfTheMonth.photo}
+              alt={`${memberOfTheMonth.month} member of the month`}
+              placeholder="?"
+            />
             <div className="motm__body">
               <h2 className="motm__title">
                 Member <span className="script">of the</span> Month
@@ -75,9 +80,6 @@ export function Home() {
                 <p>{memberOfTheMonth.quote}</p>
               </blockquote>
               <p className="motm__recognition">{memberOfTheMonth.recognition}</p>
-              <Link className="link-arrow" to="/team">
-                Meet our members <Icon name="arrow-right" size={18} />
-              </Link>
             </div>
           </article>
         </div>
