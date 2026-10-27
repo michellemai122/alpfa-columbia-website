@@ -1,5 +1,6 @@
 import { Photo } from '../components/Photo'
 import { links } from '../data/site'
+import { asset } from '../lib/asset'
 
 export function Sponsors() {
   return (
@@ -29,13 +30,13 @@ export function Sponsors() {
       </section>
 
       <section id="package" className="container package">
-        <a className="package__cover" href={links.sponsorshipPackage} target="_blank" rel="noreferrer">
+        <a className="package__cover" href={asset(links.sponsorshipPackage)} target="_blank" rel="noreferrer">
           <div className="package__title">
             ALPFA <small>at</small>
             <br />
             Columbia University
           </div>
-          <Photo src="/images/hero-1.jpg" alt="Sponsorship package cover" />
+          <Photo src="/images/sponsorship-cover.jpg" alt="Sponsorship package cover" />
           <div className="package__foot">
             <span>Sponsorship package</span>
             <span>2026–2027</span>
@@ -47,7 +48,7 @@ export function Sponsors() {
             See our sponsorship tiers, partnership benefits, and how your organization can get involved with ALPFA
             Columbia this year.
           </p>
-          <a className="btn btn--navy" href={links.sponsorshipPackage} target="_blank" rel="noreferrer">
+          <a className="btn btn--navy" href={asset(links.sponsorshipPackage)} target="_blank" rel="noreferrer">
             Open the package
           </a>
         </div>

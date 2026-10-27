@@ -8,7 +8,7 @@ export const links = {
   whatsapp: '#',
   email: 'mailto:alpfa@columbia.edu',
   googleCalendar: '#',
-  sponsorshipPackage: '#',
+  sponsorshipPackage: '/ALPFA-Columbia-Sponsorship-Package-2026-2027.pdf',
   shareEventIdea: '#',
 } as const
 
