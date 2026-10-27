@@ -46,7 +46,7 @@ export function Team() {
     <>
       <section className="container section-head">
         <p className="eyebrow eyebrow--red">Our team</p>
-        <h1 className="display display--lg">Meet the people behind ALPFAmilia.</h1>
+        <h1 className="display display--lg">Meet the people behind ALPFA Columbia.</h1>
         <p className="lede">Our E-Board and OCM are here to support you, collaborate with you, and grow with you.</p>
       </section>
       <div className="container team">
