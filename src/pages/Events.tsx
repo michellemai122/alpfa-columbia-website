@@ -5,8 +5,9 @@ import {
   calendarEvents,
   eventCategories,
   formatEventDate,
+  formatLongDate,
   pastEvents,
-  upcomingEvent,
+  upcomingEvents,
   type EventCategory,
 } from '../data/events'
 import { links } from '../data/site'
@@ -63,7 +64,7 @@ export function Events() {
   const shown = (filter === 'All' ? pastEvents : pastEvents.filter((e) => e.category === filter)).toSorted((a, b) =>
     a.date.localeCompare(b.date),
   )
-  const upcomingDate = new Date(`${upcomingEvent.date}T12:00:00`)
+  const upcomingDate = new Date(`${upcomingEvents[0].date}T12:00:00`)
 
   return (
     <>
@@ -97,13 +98,23 @@ export function Events() {
           </a>
         </div>
         <aside className="upcoming">
-          <p className="eyebrow">Next upcoming event</p>
-          <h3 className="display display--md display--light">{upcomingEvent.title}</h3>
-          <p className="upcoming__date">
-            <Icon name="calendar" size={18} />
-            {upcomingDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}
-          </p>
-          <Photo className="rounded" src={upcomingEvent.photo} alt={upcomingEvent.title} />
+          <p className="eyebrow">Upcoming events</p>
+          <ul className="upcoming__list">
+            {upcomingEvents.map((e) => (
+              <li key={e.title}>
+                <h3>{e.title}</h3>
+                <p>
+                  <Icon name="calendar" size={16} /> {formatLongDate(e.date)}
+                </p>
+                <p>
+                  <Icon name="clock" size={16} /> {e.time}
+                </p>
+                <p>
+                  <Icon name="pin" size={16} /> {e.location}
+                </p>
+              </li>
+            ))}
+          </ul>
         </aside>
       </section>
 

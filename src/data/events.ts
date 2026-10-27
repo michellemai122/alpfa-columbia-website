@@ -23,18 +23,26 @@ export const pastEvents: ChapterEvent[] = [
   { title: 'ALPFAmilia Welcome Mixer', date: '2026-10-28', category: 'Community', photo: '/images/events/welcome-mixer.jpg' },
 ]
 
-/** Events shown on the "Plan your next event" calendar. */
-export const calendarEvents: { title: string; date: string; highlight?: boolean }[] = [
-  { title: 'Activities Fair', date: '2026-09-12' },
-  { title: 'Amazon × ALPFA', date: '2026-09-17', highlight: true },
-  { title: 'Resume Workshop', date: '2026-09-22' },
-  { title: 'ALPFAmilia Social', date: '2026-09-26' },
+export type UpcomingEvent = {
+  title: string
+  /** ISO date, e.g. 2026-11-05 */
+  date: string
+  time: string
+  location: string
+}
+
+/** Confirmed upcoming events, soonest first. The first one is featured on Home and highlighted on the calendar. */
+export const upcomingEvents: UpcomingEvent[] = [
+  { title: 'AlphaSights x ALPFA Columbia', date: '2026-11-05', time: '8–9 PM', location: 'Uris Hall 330' },
+  { title: 'Plot Twist: ALPFA Columbia x HSA', date: '2026-11-10', time: '8–9 PM', location: 'Uris Hall 331' },
+  { title: "Annual Women's Mixer", date: '2026-11-14', time: '5–8 PM', location: 'Satow Room' },
 ]
 
-export const upcomingEvent = {
-  title: 'Amazon × ALPFA',
-  date: '2026-09-17',
-  photo: '/images/events/amazon.jpg',
+/** Events shown on the "Plan your next event" calendar. */
+export const calendarEvents = upcomingEvents.map((e, i) => ({ title: e.title, date: e.date, highlight: i === 0 }))
+
+export function formatLongDate(iso: string): string {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })
 }
 
 export function formatEventDate(iso: string): string {

@@ -1478,18 +1478,36 @@ p {
   color: rgb(255 255 255 / 0.85);
 }
 
-.upcoming__date {
+.upcoming__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.upcoming__list li {
+  padding: 16px 0;
+  border-top: 1px solid rgb(255 255 255 / 0.35);
+}
+
+.upcoming__list li:first-child {
+  border-top: 0;
+  padding-top: 4px;
+}
+
+.upcoming__list h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.upcoming__list p {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-head);
-  text-transform: uppercase;
-}
-
-.upcoming .photo {
-  flex: 1;
-  min-height: 240px;
-  margin-top: 8px;
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
 }
 
 .explore {

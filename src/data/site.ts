@@ -32,11 +32,6 @@ export const stats = [
   { value: '100K+', label: 'National ALPFAmilia', icon: 'globe' },
 ] as const
 
-export const nextEvent = {
-  title: 'Amazon × ALPFA',
-  date: 'September 17',
-}
-
 export const memberOfTheMonth = {
   month: 'October',
   name: 'Member of the Month',

@@ -14,6 +14,7 @@ export type IconName =
   | 'whatsapp'
   | 'mail'
   | 'pin'
+  | 'clock'
   | 'briefcase'
   | 'presentation'
   | 'chart'
@@ -36,6 +37,7 @@ const paths: Record<IconName, string> = {
   whatsapp: 'M4 20l1.3-4A8 8 0 1 1 8 18.8zM9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1 0-2.5-1.5-2.5-2.5l1-1-1-2z',
   mail: 'M3 6h18v12H3zM3 6l9 7 9-7',
   pin: 'M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12zM12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
+  clock: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2',
   briefcase: 'M3 8h18v11H3zM9 8V5h6v3M3 13h18',
   presentation: 'M3 4h18v11H3zM12 15v5M8 20h8M7 11l3-3 3 2 4-4',
   chart: 'M4 20h16M6 16v-4M10 16V9M14 16v-6M18 16V6',
