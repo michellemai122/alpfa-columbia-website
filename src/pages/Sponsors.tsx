@@ -25,7 +25,7 @@ export function Sponsors() {
               </a>
             </div>
           </div>
-          <Photo className="sponsor-hero__photo" src="/images/sponsors-hero.jpg" alt="ALPFA Columbia members at PwC" />
+          <Photo className="sponsor-hero__photo" src="/images/sponsors-hero.jpg" alt="ALPFA Columbia members on the Low Library steps" />
         </div>
       </section>
 

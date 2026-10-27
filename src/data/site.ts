@@ -20,9 +20,9 @@ export type NavItem = { label: string; to: string; external?: boolean }
 export const navItems: NavItem[] = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
+  { label: 'Events', to: '/events' },
   { label: 'Programs', to: '/programs' },
   { label: 'Convention', to: '/convention' },
-  { label: 'Events', to: '/events' },
   { label: 'Team', to: '/team' },
 ]
 

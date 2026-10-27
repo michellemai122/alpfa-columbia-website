@@ -52,7 +52,7 @@ export function Team() {
       <div className="container team">
         <TeamGroup title="Co-Presidents" members={coPresidents} />
         <TeamGroup title="Executive Board" members={executiveBoard} />
-        <TeamGroup title="OCM" subtitle="Supporting our programs, events, and ALPFAMILIA community." members={ocm} large />
+        <TeamGroup title="Operational Committee Members" subtitle="Supporting our programs, events, and ALPFAMILIA community." members={ocm} large />
       </div>
     </>
   )
