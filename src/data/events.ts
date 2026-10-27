@@ -20,7 +20,7 @@ export const pastEvents: ChapterEvent[] = [
   { title: 'Consulting 101', date: '2026-10-06', category: 'Professional', photo: '/images/events/consulting-101.jpg' },
   { title: 'Tech 101', date: '2026-10-13', category: 'Professional', photo: '/images/events/tech-101.jpg' },
   { title: 'Amazon × ALPFA', date: '2026-10-15', category: 'Professional', photo: '/images/events/amazon.jpg' },
-  { title: 'Night Market', date: '2026-10-18', category: 'Community', photo: '/images/events/night-market.svg' },
+  { title: 'Night Market', date: '2026-10-16', category: 'Community', photo: '/images/events/night-market.svg' },
   { title: 'Finance 101', date: '2026-10-20', category: 'Professional', photo: '/images/events/finance-101.jpg' },
   { title: 'CareerSpring Workshop', date: '2026-10-22', category: 'Professional', photo: '/images/events/careerspring.jpg' },
 ]
