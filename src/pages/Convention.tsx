@@ -22,15 +22,12 @@ const pastConventions = [
     city: 'Las Vegas, NV',
     year: '2025',
     slug: 'las-vegas',
-    // Mostly portrait photos, so four fit across at a good height.
-    perView: 4,
     text: 'Our 2025 convention in Las Vegas brought together students and professionals for unforgettable networking, leadership development, and new opportunities.',
   },
   {
     city: 'Charlotte, NC',
     year: '2026',
     slug: 'charlotte',
-    perView: 3,
     text: 'Our 2026 convention in Charlotte was a launchpad for growth, innovation, and community, uniting students, professionals, and corporate partners from across the country.',
   },
 ]
@@ -150,7 +147,7 @@ export function Convention() {
               <Photo className="rounded" src={`/images/convention/${c.slug}-main.jpg`} alt={`${c.city} convention`} />
             </div>
             <p className="eyebrow eyebrow--yellow">{c.city.split(',')[0]} memories</p>
-            <Carousel photos={memories(c.slug, c.city)} perView={c.perView} keepAspect className="trip__carousel" />
+            <Carousel photos={memories(c.slug, c.city)} strip className="trip__carousel" />
           </article>
         ))}
 

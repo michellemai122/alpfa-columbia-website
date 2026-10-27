@@ -4,7 +4,7 @@ export const links = {
   lionhub: '#',
   instagram: 'https://www.instagram.com/alpfacolumbia/',
   linkedin: 'https://www.linkedin.com/in/alpfacolumbiauniversity/',
-  tiktok: '#',
+  tiktok: 'https://www.tiktok.com/@cualpfa',
   whatsapp: '#',
   email: 'mailto:communicationsalpfacolumbia@gmail.com',
   googleCalendar: '#',

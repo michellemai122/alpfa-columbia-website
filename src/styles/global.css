@@ -31,6 +31,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Reserve the scrollbar's space so short and long pages are the same width. */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -421,25 +423,15 @@ p {
 }
 
 .footer__social {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__icons {
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin-bottom: 18px;
-}
-
-.footer__follow {
-  display: inline-block;
-  font-family: var(--font-head);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  padding-bottom: 6px;
-  border-bottom: 1px solid currentColor;
 }
 
 .footer__bottom {
@@ -570,18 +562,36 @@ p {
   height: 100%;
 }
 
-.carousel__track--natural {
+.carousel__strip {
   display: flex;
-  align-items: flex-start;
+  gap: 4px;
+  height: var(--strip-height, 320px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-/* Each cell grows in proportion to its photo's shape, so every photo shows uncropped at one shared height. */
-.carousel__cell {
-  min-width: 0;
+.carousel__strip::-webkit-scrollbar {
+  display: none;
 }
 
-.carousel__cell .photo {
+/* Photos keep their own shape at one fixed height, so nothing is cropped and the row never changes height. */
+.carousel__strip .photo {
+  flex: none;
+  width: auto;
   height: 100%;
+  scroll-snap-align: start;
+}
+
+.carousel__strip .photo--placeholder {
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 560px) {
+  .carousel__strip {
+    --strip-height: 220px;
+  }
 }
 
 .carousel__btn {

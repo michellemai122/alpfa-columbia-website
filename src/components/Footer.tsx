@@ -34,7 +34,6 @@ export function Footer() {
               </a>
             ))}
           </div>
-          <p className="footer__follow">Follow &amp; Connect</p>
         </div>
       </div>
 

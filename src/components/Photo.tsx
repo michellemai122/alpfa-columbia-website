@@ -8,11 +8,10 @@ type PhotoProps = {
   grayscale?: boolean
   /** Shown instead of the alt text when the photo is missing. */
   placeholder?: ReactNode
-  onLoad?: (img: HTMLImageElement) => void
 }
 
 /** An image that falls back to a branded placeholder until the real photo is added to /public/images. */
-export function Photo({ src, alt, className = '', grayscale = false, placeholder, onLoad }: PhotoProps) {
+export function Photo({ src, alt, className = '', grayscale = false, placeholder }: PhotoProps) {
   const [failed, setFailed] = useState(false)
   const classes = `photo ${grayscale ? 'photo--gray' : ''} ${className}`.trim()
 
@@ -30,7 +29,6 @@ export function Photo({ src, alt, className = '', grayscale = false, placeholder
       src={asset(src)}
       alt={alt}
       loading="lazy"
-      onLoad={(e) => onLoad?.(e.currentTarget)}
       onError={() => setFailed(true)}
     />
   )

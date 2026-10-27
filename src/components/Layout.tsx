@@ -7,7 +7,8 @@ export function Layout() {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // Jump straight to the top of the new page; the global smooth scrolling would otherwise animate it.
+    window.scrollTo({ top: 0, behavior: 'instant' })
   }, [pathname])
 
   return (

@@ -73,7 +73,7 @@ export function Programs() {
             <strong>shaped by <em>early interest</em></strong>, so <strong>don&rsquo;t miss your chance</strong> to help
             decide what we build. Head to our{' '}
             <a href={links.lionhub} target="_blank" rel="noreferrer">
-              Linktree
+              LionHub
             </a>
             !
           </p>
