@@ -47,6 +47,7 @@ export const memberOfTheMonth = {
   photo: '/images/member-of-the-month.jpg',
 }
 
+/** Not shown right now: the Home "Our Network" section was removed until real partner logos are ready. */
 export const networkLogos = [
   { name: 'Google', src: '/images/logos/google.png' },
   { name: 'Amazon', src: '/images/logos/amazon.png' },

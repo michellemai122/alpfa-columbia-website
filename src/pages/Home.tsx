@@ -4,8 +4,7 @@ import { Faq } from '../components/Faq'
 import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
 import { faq } from '../data/faq'
-import { links, memberOfTheMonth, networkLogos, nextEvent, stats } from '../data/site'
-import { asset } from '../lib/asset'
+import { links, memberOfTheMonth, nextEvent, stats } from '../data/site'
 
 const heroPhotos = [
   { src: '/images/hero-1.jpg', alt: 'ALPFA Columbia members on the Low Library steps' },
@@ -85,28 +84,6 @@ export function Home() {
         </div>
       </section>
 
-      <section className="network">
-        <div className="container network__head">
-          <h2 className="display display--md underline">Our Network</h2>
-          <p>
-            Our members gain access to top companies, recruiters, and industry leaders who believe in the power of
-            Latino talent.
-          </p>
-        </div>
-        <div className="container network__logos">
-          {networkLogos.map((logo) => (
-            <div key={logo.name} className="network__logo">
-              <img
-                src={asset(logo.src)}
-                alt={logo.name}
-                onError={(e) => {
-                  e.currentTarget.replaceWith(Object.assign(document.createElement('span'), { textContent: logo.name }))
-                }}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
 
       <section className="container faq-section">
         <h2 className="display display--md underline">
