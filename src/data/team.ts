@@ -28,6 +28,8 @@ export const executiveBoard: TeamMember[] = [
   },
   { name: 'Justin Martinez-Posadas', role: 'External Engagement Chair' },
   { name: 'Santiago Castano-Medina', role: 'Community Liaison Chair' },
+  { name: 'Leilani Hernandez', role: 'Freshman Representative' },
+  { name: 'Rodrigo Jaime', role: 'Freshman Representative' },
 ]
 
 export const ocm: TeamMember[] = [
