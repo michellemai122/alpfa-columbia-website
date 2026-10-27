@@ -1388,7 +1388,7 @@ p {
   padding-top: 48px;
 }
 
-.stacked-words span {
+.stacked-words > span {
   display: block;
 }
 
