@@ -5,7 +5,7 @@ export const links = {
   instagram: 'https://www.instagram.com/alpfacolumbia/',
   linkedin: 'https://www.linkedin.com/in/alpfacolumbiauniversity/',
   tiktok: 'https://www.tiktok.com/@cualpfa',
-  whatsapp: '#',
+  whatsapp: 'https://chat.whatsapp.com/BVmsSk4fj4YLRbexd43Bkn',
   email: 'mailto:communicationsalpfacolumbia@gmail.com',
   googleCalendar: '#',
   /** Columbia SecurePay page where sponsors pick a tier and pay. */
