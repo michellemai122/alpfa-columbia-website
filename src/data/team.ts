@@ -46,6 +46,7 @@ export const ocm: TeamMember[] = [
   { name: 'Keysy Lopez Diaz', role: 'Marketing' },
   { name: 'Sofia Taboda', role: 'Marketing' },
   { name: 'Emily Ramirez Garcia', role: 'Marketing' },
+  { name: 'Toren Savage', role: 'Marketing' },
   { name: 'Ashley Castillo Mendez', role: 'External Engagement' },
   { name: 'Laleigh Piñeiro', role: 'OCM Member' },
 ]
