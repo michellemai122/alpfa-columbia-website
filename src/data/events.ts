@@ -8,7 +8,8 @@ export type ChapterEvent = {
   photo?: string
 }
 
-export const eventCategories: EventCategory[] = ['Professional', 'Leadership', 'Community']
+// Filter chips on the Events page. Add 'Leadership' back once an event uses it.
+export const eventCategories: EventCategory[] = ['Professional', 'Community']
 
 export const pastEvents: ChapterEvent[] = [
   { title: 'Resume Workshop', date: '2026-09-02', category: 'Professional', photo: '/images/events/resume-workshop.jpg' },
