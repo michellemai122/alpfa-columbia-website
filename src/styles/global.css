@@ -1272,6 +1272,8 @@ p {
 
 .familia__cards .photo {
   height: 180px;
+  /* Group selfies: keep the faces near the top in frame. */
+  object-position: 50% 15%;
 }
 
 .familia__cards figcaption {
