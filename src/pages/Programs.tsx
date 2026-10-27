@@ -8,7 +8,7 @@ const familiaCards = [
 ]
 
 const winners = [
-  { label: 'Dinner together', src: '/images/programs/winners-dinner.jpg' },
+  { label: 'Dinner together', src: '/images/programs/winners-dinner-2026.jpg' },
   { label: 'Pilates celebration', src: '/images/programs/winners-pilates.jpg' },
 ]
 
