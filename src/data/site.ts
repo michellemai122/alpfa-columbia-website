@@ -1,7 +1,7 @@
 // Site-wide links. Replace the "#" placeholders with the chapter's real URLs.
 export const links = {
-  linktree: '#',
-  newsletter: '#',
+  /** Columbia LionHub page: members join here and get the newsletter. */
+  lionhub: '#',
   instagram: 'https://www.instagram.com/alpfacolumbia/',
   linkedin: 'https://www.linkedin.com/in/alpfacolumbiauniversity/',
   tiktok: '#',
@@ -23,7 +23,6 @@ export const navItems: NavItem[] = [
   { label: 'Convention', to: '/convention' },
   { label: 'Events', to: '/events' },
   { label: 'Team', to: '/team' },
-  { label: 'Join', to: links.linktree, external: true },
 ]
 
 export const stats = [

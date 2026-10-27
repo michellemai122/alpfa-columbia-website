@@ -26,7 +26,7 @@ export function Home() {
             Latino leaders<span className="dot">.</span>
           </h1>
           <div className="hero__actions">
-            <a className="btn btn--navy" href={links.linktree} target="_blank" rel="noreferrer">
+            <a className="btn btn--navy" href={links.lionhub} target="_blank" rel="noreferrer">
               Join the ALPFAmilia
             </a>
             <Link className="btn btn--ice" to="/sponsors">

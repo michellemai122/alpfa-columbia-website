@@ -21,8 +21,8 @@ export function Footer() {
         <div className="footer__newsletter">
           <h2>Stay Connected</h2>
           <p>Get chapter updates, opportunities, and event announcements.</p>
-          <a className="btn btn--cream" href={links.newsletter} target="_blank" rel="noreferrer">
-            Join our newsletter <Icon name="external" size={16} />
+          <a className="btn btn--cream" href={links.lionhub} target="_blank" rel="noreferrer">
+            Join our LionHub <Icon name="external" size={16} />
           </a>
         </div>
 

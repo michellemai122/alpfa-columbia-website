@@ -72,7 +72,7 @@ export function Programs() {
             made for <em>YOU</em>, real hands-on experience and preparation await. These programs are{' '}
             <strong>shaped by <em>early interest</em></strong>, so <strong>don&rsquo;t miss your chance</strong> to help
             decide what we build. Head to our{' '}
-            <a href={links.linktree} target="_blank" rel="noreferrer">
+            <a href={links.lionhub} target="_blank" rel="noreferrer">
               Linktree
             </a>
             !
