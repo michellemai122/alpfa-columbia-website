@@ -1,4 +1,6 @@
+import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
+import { links } from '../data/site'
 
 const timeline = [
   { year: '1972', text: 'ALPFA begins as a national organization advancing Latino professionals.' },
@@ -60,6 +62,9 @@ export function About() {
             our members gain access to thousands of students, professionals, companies, and chapters across the country,
             turning a campus community into <strong>connections and opportunities nationwide.</strong>
           </p>
+          <a className="btn btn--cream mission__cta" href={links.alpfaNational} target="_blank" rel="noreferrer">
+            Join ALPFA National <Icon name="external" size={16} />
+          </a>
         </div>
       </section>
 

@@ -953,6 +953,10 @@ p {
   max-width: 110ch;
 }
 
+.mission__cta {
+  margin-top: 24px;
+}
+
 .life {
   padding-top: 56px;
 }

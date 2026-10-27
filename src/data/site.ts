@@ -1,6 +1,8 @@
 // Site-wide links. Replace the "#" placeholders with the chapter's real URLs.
 export const links = {
   /** Columbia LionHub page: members join here and get the newsletter. */
+  /** ALPFA national membership sign-up / login. */
+  alpfaNational: 'https://membership.alpfaplus.org/login',
   lionhub: 'https://lionhub.columbia.edu/AG003390/club_signup',
   instagram: 'https://www.instagram.com/alpfacolumbia/',
   linkedin: 'https://www.linkedin.com/in/alpfacolumbiauniversity/',
