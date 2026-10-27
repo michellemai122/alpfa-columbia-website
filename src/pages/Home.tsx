@@ -4,7 +4,7 @@ import { Faq } from '../components/Faq'
 import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
 import { faq } from '../data/faq'
-import { links, memberOfTheMonth, nextEvent, stats } from '../data/site'
+import { memberOfTheMonth, nextEvent, stats } from '../data/site'
 
 const heroPhotos = [
   { src: '/images/hero-1.jpg', alt: 'ALPFA Columbia members on the Low Library steps' },
@@ -24,14 +24,6 @@ export function Home() {
             <br />
             Latino leaders<span className="dot">.</span>
           </h1>
-          <div className="hero__actions">
-            <a className="btn btn--navy" href={links.lionhub} target="_blank" rel="noreferrer">
-              Join the ALPFAmilia
-            </a>
-            <Link className="btn btn--ice" to="/sponsors">
-              Partner with us
-            </Link>
-          </div>
           <Link className="next-up" to="/events">
             <span className="next-up__icon">
               <Icon name="calendar" size={20} />
