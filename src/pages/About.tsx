@@ -49,7 +49,6 @@ export function About() {
 
       <section className="mission">
         <div className="container">
-          <p className="eyebrow eyebrow--yellow">Join our ALPFAmilia</p>
           <h2 className="display display--md display--light">Campus community. National reach.</h2>
           <p>
             Founded in <strong>2022</strong>, ALPFA Columbia has grown into a community of{' '}
