@@ -6,6 +6,8 @@ import {
   eventCategories,
   formatEventDate,
   formatLongDate,
+  formatTimeRange,
+  googleCalendarUrl,
   pastEvents,
   upcomingEvents,
   type EventCategory,
@@ -93,9 +95,6 @@ export function Events() {
           </h2>
           <p className="lede">View upcoming programs, workshops, and community gatherings in one place.</p>
           <MonthCalendar year={upcomingDate.getFullYear()} month={upcomingDate.getMonth()} />
-          <a className="btn btn--outline" href={links.googleCalendar} target="_blank" rel="noreferrer">
-            <Icon name="calendar" size={18} /> Add ALPFA calendar
-          </a>
         </div>
         <aside className="upcoming">
           <p className="eyebrow">Upcoming events</p>
@@ -107,11 +106,14 @@ export function Events() {
                   <Icon name="calendar" size={16} /> {formatLongDate(e.date)}
                 </p>
                 <p>
-                  <Icon name="clock" size={16} /> {e.time}
+                  <Icon name="clock" size={16} /> {formatTimeRange(e.start, e.end)}
                 </p>
                 <p>
                   <Icon name="pin" size={16} /> {e.location}
                 </p>
+                <a className="upcoming__add" href={googleCalendarUrl(e)} target="_blank" rel="noreferrer">
+                  <Icon name="calendar" size={16} /> Add to Google Calendar
+                </a>
               </li>
             ))}
           </ul>

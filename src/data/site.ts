@@ -7,7 +7,6 @@ export const links = {
   tiktok: 'https://www.tiktok.com/@cualpfa',
   whatsapp: 'https://chat.whatsapp.com/BVmsSk4fj4YLRbexd43Bkn',
   email: 'mailto:communicationsalpfacolumbia@gmail.com',
-  googleCalendar: '#',
   /** Columbia SecurePay page where sponsors pick a tier and pay. */
   sponsorshipPayment: 'https://securepay.cuit.columbia.edu/payment/pub/hts5637FGer35WTIS/',
   sponsorshipPackage: '/ALPFA-Columbia-Sponsorship-Package-2026-2027.pdf',
