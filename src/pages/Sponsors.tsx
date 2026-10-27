@@ -17,7 +17,7 @@ export function Sponsors() {
               next generation of leaders.
             </p>
             <div className="hero__actions">
-              <a className="btn btn--red" href="#package">
+              <a className="btn btn--red" href={links.sponsorshipPayment} target="_blank" rel="noreferrer">
                 View sponsorship tiers
               </a>
               <a className="btn btn--navy" href={links.email}>
