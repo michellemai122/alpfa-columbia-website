@@ -1,4 +1,3 @@
-import { Icon } from '../components/Icon'
 import { Photo } from '../components/Photo'
 import { coPresidents, executiveBoard, ocm, type TeamMember } from '../data/team'
 
@@ -13,31 +12,16 @@ function slug(name: string) {
 
 function MemberCard({ member }: { member: TeamMember }) {
   return (
-    <article className="member" tabIndex={0}>
+    <article className="member">
       <Photo
         className="member__photo"
         src={member.photo ?? `/images/team/${slug(member.name)}.jpg`}
         alt={member.name}
         placeholder="?"
       />
-      <div className="member__info" aria-hidden="true">
+      <div className="member__info">
         <h3>{member.name}</h3>
         <p>{member.role}</p>
-      </div>
-      <div className="member__overlay">
-        <h3>{member.name}</h3>
-        <p>{member.role}</p>
-        {(member.major || member.classYear) && (
-          <p className="member__meta">
-            {member.major}
-            {member.classYear && ` • Class of ${member.classYear}`}
-          </p>
-        )}
-        {member.linkedin && (
-          <a href={member.linkedin} target="_blank" rel="noreferrer">
-            Connect on LinkedIn <Icon name="linkedin" size={16} />
-          </a>
-        )}
       </div>
     </article>
   )
