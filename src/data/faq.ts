@@ -10,7 +10,7 @@ export const faq: FaqItem[] = [
   {
     question: 'Do I have to be Latino/a to join?',
     answer:
-      'No. ALPFA is rooted in Latino culture and community, and everyone who wants to support and grow with that community is welcome.',
+      'No, everyone is welcome.',
   },
   {
     question: 'How much of a time commitment is ALPFA?',
@@ -20,7 +20,7 @@ export const faq: FaqItem[] = [
   {
     question: 'How do I become a member?',
     answer:
-      'Head to our Linktree to fill out the membership form and join our newsletter so you never miss an event.',
+      'Join our LionHub to become a member.',
   },
   {
     question: 'How can I attend the National Convention?',
