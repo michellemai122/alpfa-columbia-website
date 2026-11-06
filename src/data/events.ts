@@ -23,6 +23,7 @@ export const pastEvents: ChapterEvent[] = [
   { title: 'Night Market', date: '2026-10-16', category: 'Community', photo: '/images/events/night-market.jpg' },
   { title: 'Finance 101', date: '2026-10-20', category: 'Professional', photo: '/images/events/finance-101.jpg' },
   { title: 'CareerSpring Workshop', date: '2026-10-22', category: 'Professional', photo: '/images/events/careerspring.jpg' },
+  { title: 'AlphaSights x ALPFA Columbia', date: '2026-11-05', category: 'Professional', photo: '/images/events/alphasights.svg' },
 ]
 
 export type UpcomingEvent = {
@@ -37,7 +38,6 @@ export type UpcomingEvent = {
 
 /** Confirmed upcoming events, soonest first. The first one is featured on Home and highlighted on the calendar. */
 export const upcomingEvents: UpcomingEvent[] = [
-  { title: 'AlphaSights x ALPFA Columbia', date: '2026-11-05', start: '20:00', end: '21:00', location: 'Uris Hall 330' },
   { title: 'Plot Twist: ALPFA Columbia x HSA', date: '2026-11-10', start: '20:00', end: '21:00', location: 'Uris Hall 331' },
   { title: "Annual Women's Mixer", date: '2026-11-14', start: '17:00', end: '20:00', location: 'Lerner Hall, Satow Room' },
 ]

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13306b"/>
+      <stop offset="1" stop-color="#2c4f94"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="220" fill="#e7eef9" opacity="0.06"/>
+
+  <!-- rising bars -->
+  <g opacity="0.9">
+    <rect x="760" y="500" width="70" height="170" rx="8" fill="#e7eef9" opacity="0.35"/>
+    <rect x="850" y="420" width="70" height="250" rx="8" fill="#e7eef9" opacity="0.55"/>
+    <rect x="940" y="320" width="70" height="350" rx="8" fill="#f6c945"/>
+    <rect x="1030" y="210" width="70" height="460" rx="8" fill="#e05350"/>
+  </g>
+
+  <g font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="100" y="340" font-size="92" fill="#f8f6f2">ALPHASIGHTS</text>
+    <text x="100" y="440" font-size="60" fill="#f6c945">× ALPFA COLUMBIA</text>
+  </g>
+  <rect x="100" y="490" width="150" height="12" rx="6" fill="#e05350"/>
+</svg>
