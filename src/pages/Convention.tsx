@@ -90,7 +90,7 @@ export function Convention() {
           <p className="lede">
             ALPFA NY scholarships helped fully fund Columbia members to attend convention.
           </p>
-          <Photo className="rounded" src="/images/convention/scholarship.jpg" alt="Scholarship check presentation" />
+          <Photo className="rounded" src="/images/convention/scholarship.jpg" alt="ALPFA Columbia members with Kevin Durjpal, ALPFA NY Director of Student Affairs Committee, at ALPFA Convention" />
         </div>
         <div className="stack">
           <aside className="thanks-card">
