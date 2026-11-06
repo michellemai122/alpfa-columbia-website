@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13306b"/>
+      <stop offset="1" stop-color="#2c4f94"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d5bc4"/>
+      <stop offset="1" stop-color="#1c3f8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="220" fill="#e7eef9" opacity="0.06"/>
+
+  <!-- game board -->
+  <rect x="150" y="110" width="900" height="580" rx="22" fill="#0b1f4a"/>
+  <g font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" text-anchor="middle">
+    <!-- category row -->
+    <g fill="#e05350">
+      <rect x="175" y="135" width="200" height="80" rx="10"/>
+      <rect x="390" y="135" width="200" height="80" rx="10"/>
+      <rect x="605" y="135" width="200" height="80" rx="10"/>
+      <rect x="820" y="135" width="200" height="80" rx="10"/>
+    </g>
+    <g fill="#f8f6f2" font-size="24">
+      <text x="275" y="184">FINANCE</text>
+      <text x="490" y="184">TECH</text>
+      <text x="705" y="184">CULTURA</text>
+      <text x="920" y="184">CAREERS</text>
+    </g>
+    <!-- value tiles -->
+    <g fill="url(#tile)">
+      <rect x="175" y="230" width="200" height="100" rx="10"/><rect x="390" y="230" width="200" height="100" rx="10"/><rect x="605" y="230" width="200" height="100" rx="10"/><rect x="820" y="230" width="200" height="100" rx="10"/>
+      <rect x="175" y="345" width="200" height="100" rx="10"/><rect x="390" y="345" width="200" height="100" rx="10"/><rect x="605" y="345" width="200" height="100" rx="10"/><rect x="820" y="345" width="200" height="100" rx="10"/>
+      <rect x="175" y="460" width="200" height="100" rx="10"/><rect x="390" y="460" width="200" height="100" rx="10"/><rect x="605" y="460" width="200" height="100" rx="10"/><rect x="820" y="460" width="200" height="100" rx="10"/>
+      <rect x="175" y="575" width="200" height="100" rx="10"/><rect x="390" y="575" width="200" height="100" rx="10"/><rect x="605" y="575" width="200" height="100" rx="10"/><rect x="820" y="575" width="200" height="100" rx="10"/>
+    </g>
+    <g fill="#f6c945" font-size="46">
+      <text x="275" y="296">100</text><text x="490" y="296">100</text><text x="705" y="296">100</text><text x="920" y="296">100</text>
+      <text x="275" y="411">200</text><text x="490" y="411">200</text><text x="920" y="411">200</text>
+      <text x="275" y="526">300</text><text x="490" y="526">300</text><text x="705" y="526">300</text><text x="920" y="526">300</text>
+      <text x="275" y="641">400</text><text x="705" y="641">400</text><text x="920" y="641">400</text>
+    </g>
+    <!-- answered tiles -->
+    <g fill="#f8f6f2" font-size="52">
+      <text x="705" y="414">?</text>
+      <text x="490" y="644">?</text>
+    </g>
+  </g>
+</svg>
