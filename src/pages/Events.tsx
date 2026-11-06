@@ -82,7 +82,7 @@ export function Events() {
               Grow<span className="dot">.</span>
             </span>
           </h1>
-          <p className="lede">From career-building conversations to moments that bring our ALPFAMILIA together.</p>
+          <p className="lede">From career-building conversations to moments that bring our ALPFAmilia together.</p>
         </div>
         <Photo className="rounded events-hero__photo" src="/images/events/hero.jpg" alt="Members talking at a networking event" />
       </section>

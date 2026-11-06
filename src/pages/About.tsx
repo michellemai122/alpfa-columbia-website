@@ -4,7 +4,7 @@ import { links } from '../data/site'
 
 const timeline = [
   { year: '1972', text: 'ALPFA begins as a national organization advancing Latino professionals.' },
-  { year: '2022', text: 'ALPFA Columbia is founded, bringing that mission to campus.' },
+  { year: '2022', text: 'ALPFA Columbia is re-established, bringing that mission back to campus.' },
   { year: 'Today', text: 'A growing community across majors, experiences, and career interests.' },
 ]
 
@@ -51,8 +51,8 @@ export function About() {
         <div className="container">
           <h2 className="display display--md display--light">Campus community. National reach.</h2>
           <p>
-            Founded in <strong>2022</strong>, ALPFA Columbia has grown into a community of{' '}
-            <strong>80+ active members</strong> from diverse backgrounds, majors, and experiences. Through{' '}
+            Re-established in <strong>2022</strong>, ALPFA Columbia has grown into a community of{' '}
+            <strong>100+ active members</strong> from diverse backgrounds, majors, and experiences. Through{' '}
             <strong>professional development, cultural events, company visits, mentorship, and networking</strong>, we
             create spaces to celebrate our community while opening doors to what&rsquo;s next.
           </p>

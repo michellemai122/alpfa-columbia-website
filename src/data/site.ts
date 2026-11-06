@@ -26,8 +26,8 @@ export const navItems: NavItem[] = [
 ]
 
 export const stats = [
-  { value: '2022', label: 'Reestablished at Columbia', icon: 'calendar' },
-  { value: '83', label: 'Active members', icon: 'people' },
+  { value: '2022', label: 'Re-established at Columbia', icon: 'calendar' },
+  { value: '100+', label: 'Active members', icon: 'people' },
   { value: '20+', label: 'Yearly events', icon: 'ticket' },
   { value: '100K+', label: 'National ALPFAmilia', icon: 'globe' },
 ] as const

@@ -5,7 +5,7 @@ import { Photo } from '../components/Photo'
 const reasons: { icon: IconName; title: string; detail: string }[] = [
   { icon: 'briefcase', title: 'Recruiting', detail: 'Career fairs + interviews' },
   { icon: 'presentation', title: 'Professional Development', detail: 'Workshops + speakers' },
-  { icon: 'chart', title: 'Opportunity', detail: 'Internships + full-time roles' },
+  { icon: 'people', title: 'Networking', detail: 'Recruiters, alumni + peers' },
 ]
 
 const conventionStats = [
@@ -88,8 +88,7 @@ export function Convention() {
             ALPFA NY Scholarships<span className="dot">.</span>
           </h2>
           <p className="lede">
-            Thanks to ALPFA NY, Columbia students have received support to attend convention, making it possible for
-            more members to access networking, career opportunities, and the full ALPFA experience.
+            ALPFA NY scholarships helped fully fund Columbia members to attend convention.
           </p>
           <Photo className="rounded" src="/images/convention/scholarship.jpg" alt="Scholarship check presentation" />
         </div>
