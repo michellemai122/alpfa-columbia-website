@@ -55,8 +55,7 @@ export function Home() {
               </h2>
               <p className="motm__detail">{memberOfTheMonth.detail}</p>
               <blockquote>
-                <Icon name="quote" size={22} strokeWidth={2.5} />
-                <p>{memberOfTheMonth.quote}</p>
+                <p>&ldquo;{memberOfTheMonth.quote}&rdquo;</p>
               </blockquote>
               <p className="motm__recognition">{memberOfTheMonth.recognition}</p>
             </div>

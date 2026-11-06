@@ -656,8 +656,8 @@ p {
 
 .motm {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
   max-width: 1040px;
   margin-inline: auto;
   padding: 18px;
@@ -668,11 +668,12 @@ p {
 
 .motm__photo {
   border-radius: 8px;
-  min-height: 300px;
+  height: 360px;
   object-position: 50% 25%;
 }
 
 .motm__body {
+  align-self: center;
   padding: 8px 8px 8px 0;
 }
 
@@ -693,15 +694,8 @@ p {
 }
 
 .motm blockquote {
-  display: flex;
-  gap: 12px;
   margin: 14px 0;
   color: var(--muted);
-}
-
-.motm blockquote svg {
-  flex: none;
-  color: var(--red);
 }
 
 .motm__recognition {
