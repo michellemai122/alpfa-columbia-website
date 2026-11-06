@@ -33,12 +33,11 @@ export const stats = [
 ] as const
 
 export const memberOfTheMonth = {
-  month: 'October',
-  name: 'Member of the Month',
-  // Placeholder until this month's member is chosen.
-  detail: 'Name • Major • Class of 20XX',
-  quote: 'Member quote goes here.',
-  recognition: 'Why they were recognized goes here.',
+  month: 'November',
+  name: 'Marvin Fuentes',
+  detail: "Marvin Fuentes • Financial Economics • CC'30",
+  quote: "ALPFA has helped me meet some of my best friends, and I've been able to reconnect with my culture a lot more.",
+  recognition: 'Recognized for his incredible attendance and addition to our community. Favorite ALPFA memory: the entire stop light party night.',
   photo: '/images/member-of-the-month.jpg',
 }
 

@@ -669,6 +669,7 @@ p {
 .motm__photo {
   border-radius: 8px;
   min-height: 300px;
+  object-position: 50% 25%;
 }
 
 .motm__body {
