@@ -23,7 +23,7 @@ export const pastEvents: ChapterEvent[] = [
   { title: 'Night Market', date: '2026-10-16', category: 'Community', photo: '/images/events/night-market.jpg' },
   { title: 'Finance 101', date: '2026-10-20', category: 'Professional', photo: '/images/events/finance-101.jpg' },
   { title: 'CareerSpring Workshop', date: '2026-10-22', category: 'Professional', photo: '/images/events/careerspring.jpg' },
-  { title: 'AlphaSights x ALPFA Columbia', date: '2026-11-05', category: 'Professional', photo: '/images/events/alphasights.svg' },
+  { title: 'AlphaSights x ALPFA Columbia', date: '2026-11-05', category: 'Professional', photo: '/images/events/alphasights.jpg' },
 ]
 
 export type UpcomingEvent = {
